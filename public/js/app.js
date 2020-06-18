@@ -28,7 +28,7 @@ weatherForm.addEventListener('submit', (event) => {
     // .then function means when we reach the url then we have to apply this function
     // response.json returns the json data on that site and then the data is passed to the function in 'then' part
     
-    fetch('http://localhost:3000/weather?address='+ location).then( (response) => {
+    fetch('/weather?address='+ location).then( (response) => {
 
         response.json().then( (data) => {
 
